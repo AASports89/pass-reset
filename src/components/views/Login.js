@@ -67,7 +67,7 @@ const Login = () => {
             <div className="col-12 col-md-7 col-lg-6 auth-main-col text-center">
                 <div className="d-flex flex-column align-content-end">
                     <div className="auth-body mx-auto">
-                        <p>Login to your account</p>
+                        <p>LigoRx® Web-Portal | Login-Reset</p>
                         <div className="auth-form-container text-start">
                             <form className="auth-form" method="POST" onSubmit={authenticate} autoComplete={'off'}>
                                 <div className="email mb-3">
@@ -109,24 +109,21 @@ const Login = () => {
                                             <div className="form-check">
                                                 <input className="form-check-input" type="checkbox" id="remember" checked={remember} onChange={(e) => setRemember(e.currentTarget.checked)} />
                                                 <label className="form-check-label" htmlFor="remember">
-                                                    Remember me
+                                                    Remember Me
                                                 </label>
                                             </div>
                                         </div>
                                         <div className="col-6">
-                                            <div className="forgot-password text-end">
-                                                <Link to="/forgot-password">Forgot password?</Link>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit" className="btn btn-primary w-100 theme-btn mx-auto">Log In</button>
+                                    <button type="submit" href="https://dev.ligolab.com:5001/training/login_manager" className="btn btn-primary w-100 theme-btn mx-auto">Log In</button>
                                 </div>
                             </form>
 
                             <hr />
-                            <div className="auth-option text-center pt-2">No Account? <Link className="text-link" to="/register" >Sign up </Link></div>
+                            <div className="auth-option text-center pt-2">No Account? <Link className="text-link" to="/register">Sign Up </Link></div>
                         </div>
                     </div>
                 </div>

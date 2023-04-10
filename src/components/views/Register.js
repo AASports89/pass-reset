@@ -72,7 +72,7 @@ const Register = () => {
             <div className="col-12 col-md-7 col-lg-6 auth-main-col text-center">
                 <div className="d-flex flex-column align-content-end">
                     <div className="auth-body mx-auto">
-                        <p>Create your Account</p>
+                        <p>LigoRx® Web-Portal | Create Account</p>
                         <div className="auth-form-container text-start">
                             <form className="auth-form" method="POST" onSubmit={register} autoComplete={'off'}>
 
@@ -82,7 +82,7 @@ const Register = () => {
                                         id="name"
                                         name="name"
                                         value={name}
-                                        placeholder="Name"
+                                        placeholder="Username"
                                         onChange={(e) => setName(e.target.value)}
                                     />
 
@@ -126,12 +126,12 @@ const Register = () => {
 
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit" className="btn btn-primary w-100 theme-btn mx-auto">Sign Up</button>
+                                    <button type="submit" href="https://dev.ligolab.com:5001/training/login_manager" className="btn btn-primary w-100 theme-btn mx-auto">Sign Up</button>
                                 </div>
                             </form>
 
                             <hr />
-                            <div className="auth-option text-center pt-2">Have an account? <Link className="text-link" to="/login" >Sign in</Link></div>
+                            <div className="auth-option text-center pt-2">Already Have an Account? <Link className="text-link" to="/login" >Sign in</Link></div>
                         </div>
                     </div>
                 </div>
